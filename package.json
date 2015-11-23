@@ -13,7 +13,7 @@
   },
   "bin": {
     "matterfront": "./bin/matterfront",
-    "matterfront-docgen":"./bin/docgen"
+    "matterfront-docgen": "./bin/docgen"
   },
   "electronVersion": "0.34.3",
   "repository": {
@@ -35,6 +35,7 @@
   "dependencies": {
     "electron-packager": "^5.1.1",
     "nconf": "^0.8.2",
+    "rx": "^4.0.7",
     "yargs": "^3.30.0"
   }
 }

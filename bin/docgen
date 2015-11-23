@@ -2,16 +2,15 @@
 
 var dox = require("dox");
 var fs = require("fs");
-var args = require("yargs");
+var argv = require("yargs");
 
-args.
-  .usage('npm run docg [options]')
-  .alias('b','build')
-  .describe('b','builds docs for given files')
+var args = argv
+  .usage('matterfront-docgen [options]')
+  .describe('build','builds docs for given files')
   .array('build')
-  .example('build','npm run docgen --build lib/commands/info.js lib/utils builds docs for lib/commands/info.js and all files under lib/utils')
+  .example('build','matterfront-docgen --build lib/commands/info.js lib/utils builds docs for lib/commands/info.js and all files under lib/utils')
+  .help('h')
   .argv;
 
-args;
 
-console.log(argv);
+var input = Rx.Observable.pairs(args);

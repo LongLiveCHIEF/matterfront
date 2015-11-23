@@ -1,8 +1,5 @@
 #! /usr/bin/env node
 
 var pkg = require("../package.json");
-var cli = require("../lib/cli");
+var cli = require("../lib/cli")();
 var config = require("../lib/config");
-
-// builds the api and passes command line args to it
-cli().argv;
